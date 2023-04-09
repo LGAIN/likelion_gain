@@ -1,23 +1,70 @@
 .lobalnav-link-text {
-  text-decoration: none;
+  text-decoration-line: none;
 }
 
 .navbar {
+  padding-top: 0%;
   background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
+  text-decoration-line: none;
 }
-.li a {
-  text-decoration: none;
+.nav_menu {
+  text-decoration-line: none;
 }
-.a {
-  text-decoration: none;
+
+li a {
+  text-decoration-line: none;
   color: var(--text-color);
 }
+a {
+  text-decoration-line: none;
+}
+
+.global-nav {
+  border: 0px;
+}
+
+.notice_link {
+  color: blue;
+}
+
+h1 {
+  display: inline;
+}
+
+.store_way_to_buy_apple_divice {
+  font-size: 48px;
+  font-weight: 600;
+  color: #6e6e73;
+}
+
+.new {
+  display: inline;
+  height: 258px;
+  width: 980px;
+  padding: 0px 0px 15px 20px;
+  margin: 10px 0px 15px 10px;
+}
+
+.new_duct_story {
+  font-size: 48px;
+  font-weight: 600;
+  color: #6e6e73;
+  padding: 10px 10px 15px 20px;
+  margin: 10px 0px 15px 10px;
+}
+
+.main_banner {
+  height: 258px;
+  width: 980px;
+  padding: 10px 0px 10px 80px;
+  text-align: left;
+}
+
 .body {
-  margin: 0;
+  padding-top: 0%;
   background-color: lightgray;
 }
 
@@ -30,10 +77,68 @@
   list-style: none;
   display: flex;
   margin: 0;
+  text-decoration: none;
 }
 
 .nav_menu li {
-  padding: 8px 50px;
+  padding: 8px 50px 10px 10px;
+}
+
+.menu {
+  height: 148px;
+  display: inline-block;
+  padding: 10px 10px 15px 20px;
+  margin: 0px 0px 15px 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.notice {
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.mac_box {
+  text-align: center;
+  display: inline-block;
+}
+
+.iphone_box {
+  text-align: center;
+  display: inline-block;
+}
+
+.ipad_box {
+  text-align: center;
+  display: inline-block;
+}
+
+.watch_box {
+  text-align: center;
+  display: inline-block;
+}
+
+.airpods_box {
+  text-align: center;
+  display: inline-block;
+}
+
+.airtag_box {
+  text-align: center;
+  display: inline-block;
+}
+
+.tv_box {
+  text-align: center;
+  display: inline-block;
+}
+
+.etc_box {
+  text-align: center;
+  display: inline-block;
 }
 
 .Watch_img {
@@ -44,4 +149,8 @@
 }
 .Ipad_img {
   border-radius: 40px 40px 40px 40px;
+}
+
+.small_notice {
+  background-color: #f5f5f5;
 }
