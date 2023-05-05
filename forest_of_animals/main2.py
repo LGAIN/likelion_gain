@@ -2,14 +2,40 @@ import time
 import random
 
 print("""
-  ___          _                    _   _____                         _               
- / _ \        (_)                  | | /  __ \                       (_)              
-/ /_\ \ _ __   _  _ __ ___    __ _ | | | /  \/ _ __   ___   ___  ___  _  _ __    __ _ 
-|  _  || '_ \ | || '_ ` _ \  / _` || | | |    | '__| / _ \ / __|/ __|| || '_ \  / _` |
-| | | || | | || || | | | | || (_| || | | \__/\| |   | (_) |\__ \\__ \| || | | || (_| |
-\_| |_/|_| |_||_||_| |_| |_| \__,_||_|  \____/|_|    \___/ |___/|___/|_||_| |_| \__, |
-                                                                                 __/ |
-                                                                                |___/ 
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWKKKXNWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNNNWWWWWWWWWWWWWWWWWWWWWWNkoooxKWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNKOOkO0KNWNXKKKNWWX0OO0XNWX0kdodk0NWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW0dk0kO0O0KkxxdxkKXKO0O0000ddxxdd0WWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWNOoxO0OOxOkdkOOOdk00KKO00Oxok0OkdOWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW0ddxkkxk0koxxxxdO0kOOkkO0Ooxkkxd0WWNNWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWNOdolodOXWWWWWWWWWWWWNNNNKkxxxxxOXKkxxxkkKKOOkOOKNXOkkkkOKKkxxk0XWWWWWWWWW
+WWWWWWWWWWX0OkOKWWWWWWWWWNx;',;,'';dKWWWWWWWWWKxxkkkkxkkxxKXkxkOkkkOkOXWWWWWWWWWWNOdodkKOddx0NWWWWWW
+WWWWWWWN0l;''''cONWNNXXXX0dloxxxdc''dNWWWWWWWNkd00O0KOOKxo0Kdox0kdO0ddKWNXXXXXXNN0ook00O00kodKWWWWWW
+WWWWWWNx'.:looccokkxddoollloodxxxdc:kNWWWWWWWNkd00OOKOOKxo0KxokX0d0XOxKXKKKKKKKX0olkKK000KKkoxXWWWWW
+WWWWWMK:.cdxdolc:;,,'''.....',;:lodkXWWWWWWWWNOooxkO0OOkddKKxkKXKO0KxdKXKXXXXXKX0olx0XXNNXKxldKWWWWW
+WWWWWWNkccll:;'..............',,,,:dOXWWWWWWWNOodkOkddkkdd0KxxkxkkkkddKX0KKKKXKXXxld0XXKXXKxlxXWWWWW
+WWWWWWWWKdc,................,cooo:',lkKNWWWWWNOdddddoodddxKKxddddddddxKXOOOOOO0XW0olododdddooONWWWWW
+WWWWWWWW0l,..,:cc,..........oxcclo:.,lxKWWWWWWNNNNNNNNNNNNWWNNNNNXXNNNWWNNNNNWWWWWXK0kxxkOKKXWWWWWWW
+WWWWWWWXd;..,::;ld;.........cko:cxo..;okXWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWW0l,..:c,'cd;.....'''.':lool,..,ldKWWWWWWWWWWWWWXKKKKKKKKKKKKKKKKKKKKKKKKKKKKXWWWWWWWWWWWWWWWW
+WWWWWWNOl,..,llcl:..,;::cclllc;,'..',:ldKWWWWWWWWWWWWNkllllllllcccclllllcclllccllllokXWWWWWWWWWWWWWW
+WWWWWWW0l;.....'..,::;'...';ldolc:::cccxNWWWWWWWWWWWWWNkl:clllllllooolllllollllloolccdKNWWWWWWWWWWWW
+WWWWWWWXxc;''..',;::,.......;cllc::;:cxXWWWWWWWWWWWWWWWWKdcllccccclllllllllcccccclccccl0WWWWWWWWWWWW
+WWWWWWWWKxl::;;;;:::;,'....',;::;;:lx0NWWWWWWWWWWWWWWWWWKdcccloolllllllcclllllllccccccl0WWWWWWWWWWWW
+WWWWWWWWWN0xlc:::::c:::;;;;:cclodkKNWWWN0kxOXWWWWWWWWWNOoccccccccllllcc:::ccccllcccccdKWWWWWWWWWWWWW
+WWWWWWWWWWWWXKOOkkxxdl:;;:okO0K000XNX0kc'..,kWWWWWWWWNkl::ccccc::ccccccc::cccccccc:lkXWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWNX00KOoclx0KXXNX0O0Odl:'..,xXWWWWWWWWNX0000000000KKKKKK00KK00000000XWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWNKOkOOOOkO0KKXXXXXK0Oo::;:lxKWWWWWWWWWWWWWWWNXXXXXXNNNNXXXXNXXXXXXXNWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWNKOkOOkkkOkOKXXXXOxx0KOkxk0NWWWWWWWWWWWWWWWWWNNXNXXNNNNNXXXNNXXXXXXNNWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWXkldOOkkOO0KKXXXXX0xdkKNNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWKdc:lkkkOOO0Ok0KKKKXK0KXNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWO:',:dOkkkkOOOxOK0KKXXXNNWWNXXNWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWW0:..:k0Okxxxkk0KKKKKXXXXXXNN0l;cd0NWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWXo;l0NK0kxddxxkxd0KKKXKKKXNNKc...:OWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+ 
 """)
 print("~ 모여봐요 멋사의 숲 ~\n")
 
@@ -25,6 +51,14 @@ my_pocket = {'가습기': 0, '강아지 인형': 0, '강의실 책상': 0, '몬�
 store = {'가습기': 1400, '강아지 인형': 2400, '강의실 책상': 2500, '몬스테라': 1700}
 
 action_boolean = 1
+
+print("""
+우리는 처음 입주하는 주민에게
+기본 3000벨을 지급하고있다구리!
+이 벨은 너의 주머니에 넣어두라구리~
+나중에 상점에서 물건을 구입하면 너의 주머니에 있는 벨이 차감될거다구리!
+""")
+time.sleep(1)
 
 # 4가지 반복하기
 while action_boolean:
@@ -185,7 +219,7 @@ while action_boolean:
         # 100벨이 떨어질경우
         if result == "100벨":
             print("\n나무를 흔들면 랜덤으로 100벨이 나온다구리") 
-            print("나온 벨은 너의ㅏ 벨에 추가된다구리!")
+            print("나온 벨은 너의 벨에 추가된다구리!")
             my_bell += 100
         # 사과가 떨어질경우
         elif result == "사과":
@@ -204,7 +238,7 @@ while action_boolean:
     # 4. 정보보기를 선택한 경우
     elif answer_action == "4":
         # 이름 출력
-        print("이름: " + name)
+        print("\n이름: " + name)
 
         # 남은 벨 출력
         print("벨: " + str(my_bell) + "벨")
